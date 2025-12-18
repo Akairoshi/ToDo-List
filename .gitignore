@@ -1,0 +1,37 @@
+# ----------------------
+# VSCode
+# ----------------------
+.vscode/
+*.code-workspace
+
+# ----------------------
+# Build files
+# ----------------------
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# ----------------------
+# Binaries
+# ----------------------
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+
+# ----------------------
+# Other
+# ----------------------
+*.log
+*.user
+*.user.*.json
+*.swp
+*.swo
+.DS_Store
