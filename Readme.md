@@ -9,12 +9,12 @@ A simple C++ console application for managing a to-do list.
 - Display task list
 
 ## Requirements
-- C++17 or newer
+- C++20 or newer
 - Standard C++ library
 
 ## How to Compile and Run
 
 ### Using g++
 ```bash
-g++ -std=c++17 main.cpp -o todo_list
+g++ -std=c++20 main.cpp -o todo_list
 ./todo_list
