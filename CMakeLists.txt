@@ -7,5 +7,10 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(todolist
     src/main.cpp
+    src/taskManager.cpp
 )
-target_include_directories(todolist PRIVATE ${CMAKE_SOURCE_DIR}/external/SelfCreatedFunc/include)
+target_include_directories(todolist PRIVATE 
+    ${CMAKE_SOURCE_DIR}/external/SelfCreatedFunc/include
+    ${CMAKE_SOURCE_DIR}/include
+ 
+)
