@@ -43,14 +43,20 @@ int main() {
         }
 
         else if (cmd == "list") {
+
+            cout << "\n" << "---- Tasks ----" << "\n";
+
             auto tasks = manager.getTasks(taskManager::SortType::ByStatus);
 
             for (const auto& t : tasks) {
                 cout << t.id << ": " << t.description << (t.isDone ? " [X]" : " [ ]") << "\n";
             }
+            cout << "\n";
         }
 
         else if (cmd == "exit") break;
+        else if (cmd == "help") cout << "? Availbale commands: add, mark, remove, list, help, exit" << "\n";
+
         else cout << "! Unknown command\n";
     }
 }
